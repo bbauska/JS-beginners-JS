@@ -1,14 +1,14 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>DOM Query Selector Methods</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The Document Object Model provides a set of methods that allow 
+<p>The Document Object Model provides a set of methods that allow 
 you to select a specific element in the HTML nodes. They are the 
-<b>querySelector()</b> and <b>querySelectorAll()</b> methods.
-The <b>querySelector()</b> method is a JavaScript method from the 
+<b>querySelector()</b> and <b>querySelectorAll()</b> methods.</p>
+<p>The <b>querySelector()</b> method is a JavaScript method from the 
 document object that allows you to retrieve a single Element object 
-that matches the CSS selector passed to the method. 
-The CSS selector is the pattern you use when targeting a specific
-element for styling. Here’s an example of CSS selectors:
+that matches the CSS selector passed to the method.</p>
+<p>The CSS selector is the pattern you use when targeting a specific
+element for styling. Here’s an example of CSS selectors:</p>
 
 ```
 /* Selecting all elements with the id value of box */
@@ -20,22 +20,22 @@ element for styling. Here’s an example of CSS selectors:
 }
 ```
 
-The pattern you need to pass to the <b>querySelector()</b> method can be 
-as simple or as complex as you need.
-For example, here’s how to use the method to retrieve an element 
-with an id attribute of 'box':
+<p>The pattern you need to pass to the <b>querySelector()</b> method can be 
+as simple or as complex as you need.</p>
+<p>For example, here’s how to use the method to retrieve an element 
+with an id attribute of 'box':</p>
 
 ```
 document.querySelector('#box');
 ```
 
-The <b>querySelector()</b> method always returns the first element that 
+<p>The <b>querySelector()</b> method always returns the first element that 
 matches the query. The method searches for the element from the 
-top to the bottom of the DOM tree.
-The string parameter passed to the <b>querySelector()</b> method follows 
+top to the bottom of the DOM tree.</p>
+<p>The string parameter passed to the <b>querySelector()</b> method follows 
 the CSS selector pattern, where class is represented by a period '.' 
-and id is represented by a hash '#'. 
-Suppose you have the following HTML element on your page:
+and id is represented by a hash '#'.</p>
+<p>Suppose you have the following HTML element on your page:</p>
 
 ```
 <body>
@@ -45,7 +45,7 @@ Suppose you have the following HTML element on your page:
 </body>
 ```
 
-You can retrieve the &lt;p&gt; element by passing "p" as the method’s argument:
+<p>You can retrieve the &lt;p&gt; element by passing "p" as the method’s argument:</p>
 
 ```
 let element = document.querySelector('p');
@@ -53,8 +53,8 @@ console.log(element);
 // <p id="opening" class="bold">Opening</p>
 ```
 
-Or you can also pass the id or the class attribute, it will return the
-same &lt;p&gt; element:
+<p>Or you can also pass the id or the class attribute, it will return the
+same &lt;p&gt; element:</p>
 
 ```
 document.querySelector('.bold');
@@ -64,39 +64,39 @@ document.querySelector('#opening');
 // <p id="opening" class="bold">Opening</p>
 ```
 
-When you pass a selector that returns two elements, only the first
+<p>When you pass a selector that returns two elements, only the first 
 element will be returned by the method. The following code tries to
-fetch both &lt;h1&gt; and &lt;h2&gt; elements:
+fetch both &lt;h1&gt; and &lt;h2&gt; elements:</p>
 
 ```
 document.querySelector('h1, h2');
 // <h1>Query Selector</h1>
 ```
 
-Above, you can see that the method returns the first match, which
-is the &lt;h1&gt; element.
-And that’s how the <b>querySelector()</b> method works. When you need 
-to retrieve more than a single element, you need to use the 
-alternative <b>querySelectorAll()</b> method instead.
+<p>Above, you can see that the method returns the first match, which is the &lt;h1&gt; 
+element.</p>
+<p>And that’s how the <b>querySelector()</b> method works. When you need to retrieve more 
+than a single element, you need to use the alternative <b>querySelectorAll()</b> method 
+instead.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>querySelectorAll() Method</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-The <b>querySelectorAll()</b> method is a JavaScript method from the 
+<p>The <b>querySelectorAll()</b> method is a JavaScript method from the 
 DOM API that allows you to retrieve all elements that match the 
-CSS selector you passed as the argument.
-For example, here’s how to use the method to retrieve any element 
-that has the class attribute of box:
+CSS selector you passed as the argument.</p>
+<p>For example, here’s how to use the method to retrieve any element 
+that has the class attribute of box:</p>
 
 ```
 document.querySelectorAll('.box');
 ```
 
-The string parameter passed to the <b>querySelectorAll()</b> method 
+<p>The string parameter passed to the <b>querySelectorAll()</b> method 
 follows the CSS selector pattern, where <b>class</b> is represented by a 
-period '.' and <b>id</b> is represented by a hash '#'.
-To retrieve all copies of a specific element, you can simply pass the
-name of the element as its argument.
-Suppose you have the following HTML element on your page:
+period '.' and <b>id</b> is represented by a hash '#'.</p>
+<p>To retrieve all copies of a specific element, you can simply pass the
+name of the element as its argument.</p>
+<p>Suppose you have the following HTML element on your page:</p>
 
 ```
 <body>
@@ -106,8 +106,7 @@ Suppose you have the following HTML element on your page:
 </body>
 ```
 
-You can retrieve all <p> elements by passing "p" as the method’s
-argument:
+<p>You can retrieve all &lt;p&gt; elements by passing 'p' as the method’s argument:</p>
 
 ```
 let elements = document.querySelectorAll('p');
@@ -117,8 +116,8 @@ console.log(elements[0]);
 // <p id="opening" class="bold">Opening</p>
 ```
 
-Or when you only need the opening and the closing <p> elements,
-you can pass either the class or the `id`s as the argument:
+<p>Or when you only need the opening and the closing <p> elements,
+you can pass either the class or the `id`s as the argument:</p>
 
 ```
 document.querySelectorAll('.bold');
@@ -132,11 +131,11 @@ document.querySelectorAll('[target=_blank]');
 document.querySelectorAll('[value=red]');
 ```
 
-The return value of the <b>querySelectorAll()</b> method will be an 
-array-like object called <b>NodeList</b>.
-To access elements of the <b>NodeList</b> object, you can use the index 
+<p>The return value of the <b>querySelectorAll()</b> method will be an 
+array-like object called <b>NodeList</b>.</p>
+<p>To access elements of the <b>NodeList</b> object, you can use the index 
 position. You can also use the <b>forEach()</b> method to iterate over the
-elements:
+elements:</p>
 
 ```
 let elements = document.querySelectorAll('p');
@@ -149,16 +148,15 @@ elements.forEach(function (element) {
 });
 ```
 
-The code above will log the current element inside the loop and set
-its <b>background-color</b> value to "yellow";
-The <b>querySelectorAll()</b> method always returns a <b>NodeList</b> object 
-even when you only have one matching element.
+<p>The code above will log the current element inside the loop and set its 
+<b>background-color</b> value to "yellow";</p>
+<p>The <b>querySelectorAll()</b> method always returns a <b>NodeList</b> object 
+even when you only have one matching element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Hide Form Steps With CSS</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Back to the Wizard Form Application, we need a way to show and
-hide the form steps using CSS and JavaScript. Add the following
-rules in style.css:
+<p>Back to the Wizard Form Application, we need a way to show and hide the form steps using 
+CSS and JavaScript. Add the following rules in <b>style.css</b>:</p>
 
 ```
 .step {
@@ -169,9 +167,8 @@ rules in style.css:
 }
 ```
 
-This causes all the div tags with the step class to be hidden from
-display. To show the form step add the class active to the step1 div
-as follows:
+<p>This causes all the div tags with the step class to be hidden from display. To show the 
+form step add the class active to the <b>step1</b> div as follows:</p>
 
 ```
 <div id="step1" class="step active">
@@ -179,13 +176,13 @@ as follows:
 </div>
 ```
 
-Go back to the browser, and you now see only the first step of the
-wizard form being displayed.
+<p>Go back to the browser, and you now see only the first step of the
+wizard form being displayed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="#add-btn">Adding the Next Button</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Now we need some buttons to move between the form steps, so add
-the following button on step1 div:
+<p>Now we need some buttons to move between the form steps, so add the following button on 
+<b>step1</b> div:</p>
 
 ```
 <div id="step1" class="step active">
@@ -194,9 +191,10 @@ the following button on step1 div:
 </div>
 ```
 
-In this button, we add the <b>onclick</b> attribute so that we can run JavaScript code when the 
-button is clicked. The name of the function we want to call is <b>nextStep()</b>, so let’s 
-create that function in our <b>script.js</b> file. We also need a <b>showStep()</b> function that will:
+<p>In this button, we add the <b>onclick</b> attribute so that we can run JavaScript 
+code when the button is clicked. The name of the function we want to call is 
+<b>nextStep()</b>, so let’s create that function in our <b>script.js</b> file. We also 
+need a <b>showStep()</b> function that will:</p>
 
 ```
 let currentStep = 1;
@@ -213,25 +211,25 @@ function nextStep() {
 }
 ```
 
-In the <b>script.js</b> file, we declared a variable named <b>currentStep</b>, which is used to let us 
+<p>In the <b>script.js</b> file, we declared a variable named <b>currentStep</b>, which is used to let us 
 know in what step the form is currently in. In the <b>nextStep()</b> function, we used the 'if' 
-statement to check if the <b>currentStep</b> is less than 3 because the form only has 3 steps.
+statement to check if the <b>currentStep</b> is less than 3 because the form only has 3 steps.</p>
 
-To move to the next step, we increment the <b>currentStep</b> value by one using the "++" 
+<p>To move to the next step, we increment the <b>currentStep</b> value by one using the "++" 
 operator, then we use the <b>document.querySelectorAll()</b> method to select all elements 
-containing the step class. We remove the <b>active</b> class from all form steps.
+containing the step class. We remove the <b>active</b> class from all form steps.</p>
 
-After that, we select the current step and add the <b>active</b> class to the 
+<p>After that, we select the current step and add the <b>active</b> class to the 
 element using the <b>classList.add()</b> method. The final task is to 
-change the content of the <b>currentStep</b> paragraph to the <b>currentStep</b>.
-Open the wizard form in the browser, and you should be able to 
+change the content of the <b>currentStep</b> paragraph to the <b>currentStep</b>.</p>
+<p>Open the wizard form in the browser, and you should be able to 
 navigate to step 3 using the <b>next</b> button. But notice that you can’t
-go back to the previous step! This is what we’re going to implement next.
+go back to the previous step! This is what we’re going to implement next.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="#add-prev">Adding the Previous Button</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Now we need another button to move to the previous step. On <b>step2</b> and <b>step3</b> 
-div tags, you can add the following buttons:
+<p>Now we need another button to move to the previous step. On <b>step2</b> and <b>step3</b> 
+div tags, you can add the following buttons:</p>
 
 ```
 <div id='step2' class='step'>
@@ -252,7 +250,7 @@ div tags, you can add the following buttons:
 </div>
 ```
 
-Next, we need to add a <b>prevStep()</b> function to the <b>script.js</b> file:
+<p>Next, we need to add a <b>prevStep()</b> function to the <b>script.js</b> file:</p>
 
 ```
 function prevStep() {
@@ -268,12 +266,12 @@ function prevStep() {
 }
 ```
 
-The <b>prevStep()</b> function is identical to the <b>nextStep()</b> function, except for 
-the 'if statement' check and decrementing the <b>currentStep</b> part.
+<p>The <b>prevStep()</b> function is identical to the <b>nextStep()</b> function, except for 
+the 'if statement' check and decrementing the <b>currentStep</b> part.</p>
 
-Instead of writing the same code in two different functions, we can create a new function 
+<p>Instead of writing the same code in two different functions, we can create a new function 
 that runs the query selectors part. Let’s name this function <b>showStep()</b>.
-Your <b>script.js</b> file should look as follows:
+Your <b>script.js</b> file should look as follows:</p>
 
 ```
 let currentStep = 1;
@@ -300,8 +298,8 @@ function prevStep() {
 }
 ```
 
-Back to the browser, now you can go to the next and previous steps with the buttons. 
-The last thing we need to do is to style these buttons. Right now they look pretty bad:
+<p>Back to the browser, now you can go to the next and previous steps with the buttons. 
+The last thing we need to do is to style these buttons. Right now they look pretty bad:</p>
 
 ```
 .f-right {
@@ -326,18 +324,18 @@ The last thing we need to do is to style these buttons. Right now they look pret
 }
 ```
 
-The <b>.f-right</b> style adds the float property to the element to move it to the 
+<p>The <b>.f-right</b> style adds the float property to the element to move it to the 
 right, the <b>.btn</b> is used to style the buttons. The <b>.btn-next</b> and 
-<b>.btn-previous</b> styles add border and background colors to the respective elements.
+<b>.btn-previous</b> styles add border and background colors to the respective elements.</p>
 
-The final task is to add the <b>submit</b> button and display the data collected by 
-the form.
+<p>The final task is to add the <b>submit</b> button and display the data collected by 
+the form.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="#add-submit">Adding a Submit Button</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Back to the project, the final task we need to do on the Wizard Form is to add a <b>submit</b> 
+<p>Back to the project, the final task we need to do on the Wizard Form is to add a <b>submit</b> 
 button to the third step, so let’s do it. Add the <b>submit</b> button to the <b>step3</b> 
-div as follows:
+div as follows:</p>
 
 ```
 <div id="step3" class="step">
@@ -352,7 +350,7 @@ div as follows:
 </div>
 ```
 
-Add the <b>CSS</b> for the <b>submit</b> button in <b>style.css</b> as follows:
+<p>Add the <b>CSS</b> for the <b>submit</b> button in <b>style.css</b> as follows:</p>
 
 ```
 .btn-submit {
@@ -361,13 +359,13 @@ Add the <b>CSS</b> for the <b>submit</b> button in <b>style.css</b> as follows:
 background-color: #28a745;
 ```
 
-Now we need to listen when the <b>submit</b> button is clicked.
+<p>Now we need to listen when the <b>submit</b> button is clicked.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#listen">Listening to Form Submit Events Using JavaScript</h2
+<h2 id="#listen">Listening to Form Submit Events Using JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Besides the DOM API, the browser also expose signals known as events that you can use as 
+<p>Besides the DOM API, the browser also expose signals known as events that you can use as 
 a cue to run a specific code. We have done this earlier when adding the onclick attribute 
-to the buttons: 
+to the buttons:</p>
 
 ```
 <button type='button' class='btn btn-secondary' onclick='prevStep()'>
@@ -378,20 +376,20 @@ to the buttons:
 </button>
 ```
 
-The onclick HTML attribute is a shortcut to listen to the click event.
-When the previous button is clicked, we run the <b>prevStep()</b> function. When the next 
-button is clicked, we run the <b>nextStep()</b> function.
-Aside from using the <b>onclick</b> attribute, we can also add event listeners using the 
-<b>addEventListener()</b> method. 
-Let’s add an <b>event listener</b> so that we know when a form is submitted. The Wizard 
-Form we created has an id attribute, so you can select that form using JavaScript.
+<p>The <b>onclick</b> HTML attribute is a shortcut to listen to the click event.</p>
+<p>When the previous button is clicked, we run the <b>prevStep()</b> function. When the next 
+button is clicked, we run the <b>nextStep()</b> function.</p>
+<p>Aside from using the <b>onclick</b> attribute, we can also add event listeners using the 
+<b>addEventListener()</b> method.</p>
+<p>Let’s add an <b>event listener</b> so that we know when a form is submitted. The Wizard 
+Form we created has an id attribute, so you can select that form using JavaScript.</p>
 
 ```
 const wizardForm = document.querySelector('#wizard-form');
 ```
 
-Next, you need to call the addEventListener() method and listen to
-the 'submit' event as follows:
+<p>Next, you need to call the addEventListener() method and listen to
+the 'submit' event as follows:</p>
 
 ```
 const wizardForm = document.querySelector('#wizard-form');
@@ -400,10 +398,10 @@ const wizardForm = document.querySelector('#wizard-form');
 });
 ```
 
-Now that we can listen to the submit event, we need to interrupt the default behavior of 
+<p>Now that we can listen to the submit event, we need to interrupt the default behavior of 
 the form so that JavaScript can take over. To do so, we need to call the 
 <b>event.preventDefault()</b> method inside the function we passed to the 
-<b>event listener</b>:
+<b>event listener</b>:</p>
 
 ```
 const wizardForm = document.querySelector('#wizard-form');
@@ -412,14 +410,14 @@ wizardForm.addEventListener('submit', function (event) {
 });
 ```
 
-The <b>preventDefault()</b> method interrupts the default flow of the submit event, 
+<p>The <b>preventDefault()</b> method interrupts the default flow of the submit event, 
 which will cause the browser to refresh the current page.
 From here, you can instruct JavaScript to do specific tasks to the form data submitted 
-by the user.
-The form object has an object property named elements that store all input elements you 
+by the user.</p>
+<p>The form object has an object property named elements that store all input elements you 
 define inside the form. Inside the object, you can access the value of input fields by 
-specifying its name attribute, followed by the value property.
-Here’s how to get the values for our Wizard Form:
+specifying its name attribute, followed by the value property.</p>
+<p>Here’s how to get the values for our Wizard Form:</p>
 
 ```
 event.preventDefault();
@@ -428,7 +426,7 @@ const username = wizardForm.elements.username.value;
 const password = wizardForm.elements.password.value;
 ```
 
-Finally, we display the data using the JavaScript <b>alert()</b> function, which;
+<p>Finally, we display the data using the JavaScript <b>alert()</b> function, which;</p>
 
 ```
 const email = wizardForm.elements.email.value;
@@ -440,10 +438,10 @@ Username: ${username} \n
 Password: ${password}`);
 ```
 
-You can test the Wizard Form in the browser. Fill in the <b>textboxes</b> and you’ll 
-get an alert when clicking the submit button:
-Just to make the application smarter, we can reset the form after it has been submitted 
-by the user:
+<p>You can test the Wizard Form in the browser. Fill in the <b>textboxes</b> and you’ll 
+get an alert when clicking the submit button:</p>
+<p>Just to make the application smarter, we can reset the form after it has been submitted 
+by the user:</p>
 
 ```
 const email = wizardForm.elements.email.value;
@@ -455,16 +453,16 @@ currentStep = 1;
 showStep();
 ```
 
-The <b>reset()</b> method from the form will reset all <b>textboxes</b>, then we 
+<p>The <b>reset()</b> method from the form will reset all <b>textboxes</b>, then we 
 set the <b>currentStep</b> variable to 1 and run the <b>showStep()</b> function to 
-reset the interface.
+reset the interface.</p>
 
-Taking Care of Repeating Code
+<h2>Taking Care of Repeating Code</h2>
 
-If you look closely, you might notice that the code for the Next and Previous buttons 
+<p>If you look closely, you might notice that the code for the Next and Previous buttons 
 in the steps are identical. Instead of writing them in the HTML file, we can use 
-JavaScript to add them dynamically.
-First, select all the steps <b>div</b> using <b>querySelector()</b> as follows:
+JavaScript to add them dynamically.</p>
+<p>First, select all the steps <b>div</b> using <b>querySelector()</b> as follows:</p>
 
 ```
 const stepsDiv = document.querySelectorAll('.step');
@@ -481,7 +479,7 @@ stepsDiv.forEach((element, index) => {
 });
 ```
 
-Next, declare three variables containing the HTML buttons tag:
+<p>Next, declare three variables containing the HTML buttons tag:</p>
 
 ```
 const stepsDiv = document.querySelectorAll('.step');
@@ -496,42 +494,41 @@ const registerButton =
 button>';
 ```
 
-Now, we need to iterate over the elements using the <b>forEach()</b> 
+<p>Now, we need to iterate over the elements using the <b>forEach()</b> 
 method. We can check if the element is the first or the last step 
-from the index value.
-For the first element at <b>index 0</b>, we only add the next button. For 
+from the index value.</p>
+<p>For the first element at <b>index 0</b>, we only add the next button. For 
 the last element, we add the previous and submit buttons, for all 
-the middle elements, we add the previous and next buttons:
+the middle elements, we add the previous and next buttons:</p>
 
 ```
 stepsDiv.forEach((element, index) => {
-if (index === 0) {
-element.innerHTML += nextButton;
-} else if (index === stepsDiv.length - 1) {
-element.innerHTML += previousButton;
-element.innerHTML += registerButton;
-} else {
-element.innerHTML += previousButton;
-element.innerHTML += nextButton;
-}
+  if (index === 0) {
+    element.innerHTML += nextButton;
+  } else if (index === stepsDiv.length - 1) {
+    element.innerHTML += previousButton;
+    element.innerHTML += registerButton;
+  } else {
+    element.innerHTML += previousButton;
+    element.innerHTML += nextButton;
+  }
 });
 ```
 
-To check if the element is the last step of the Wizard Form, we compare the index value 
-with the <b>stepsDiv.length - 1</b> value.
-To add an element to existing elements, we use the '+=' assignment operator.
-Now we can remove all &lt;button&gt; elements from the HTML file. Run 
-the Wizard Form in the browser again, and you’ll see the buttons
-added using JavaScript.
-The Wizard Form is finished. You can check the completed
-application at https://github.com/nathansebhastian/js-wizard-form/tree/main/complete
+<p>To check if the element is the last step of the Wizard Form, we compare the index value 
+with the <b>stepsDiv.length - 1</b> value.</p>
+<p>To add an element to existing elements, we use the '+=' assignment operator.</p>
+<p>Now we can remove all &lt;button&gt; elements from the HTML file. Run 
+the Wizard Form in the browser again, and you’ll see the buttons added using JavaScript.</p>
+<p>The Wizard Form is finished. You can check the completed
+application at https://github.com/nathansebhastian/js-wizard-form/tree/main/complete</p>
 
-Summary
-Congratulations on finishing your first JavaScript project! The Wizard Form application 
+<h2>Summary</h2>
+<p>Congratulations on finishing your first JavaScript project! The Wizard Form application 
 helps you learn the idea of using JavaScript to manipulate what you see on the screen.
 Although a Wizard Form looks complex, it’s actually pretty easy when you have the steps 
-mechanism created using JavaScript.
-Let’s recap what we’ve learned in this project:
+mechanism created using JavaScript.</p>
+<p>Let’s recap what we’ve learned in this project:</p>
 
   1. How to select HTML elements using <b>document.querySelector()</b> and <b>document.querySelectorAll()</b>
   2. Show and hide elements using CSS and JavaScript
@@ -541,7 +538,7 @@ Let’s recap what we’ve learned in this project:
   6. Retrieve, display, and reset form data with the event object
   7. Add elements to specific parts of the HTML document with the <b>innerHTML</b> property
   
-And the most important thing is that you’ve seen how an application can be built 
-step-by-step and gradually becomes more complex.
-In the next chapter, we’re going to learn how to use JavaScript to send and receive data 
-from a backend service.
+<p>And the most important thing is that you’ve seen how an application can be built 
+step-by-step and gradually becomes more complex.</p>
+<p>In the next chapter, we’re going to learn how to use JavaScript to send and receive data 
+from a backend service.</p>
