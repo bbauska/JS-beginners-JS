@@ -4,108 +4,101 @@
 <h2>Chapter 1: Introduction</h2>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-What is JavaScript?
+<h3>What is JavaScript?</h3>
 
-JavaScript was created around April 1995 by a developer named
-Brendan Eich. At the time, he was working to develop a browser
-for a company called Netscape. He was told that he only had 10
-days to design and code a working prototype of a programming
-language that could run on the browser.
+JavaScript was created around April 1995 by a developer named Brendan Eich. At the time, 
+he was working to develop a browser for a company called Netscape. He was told that he 
+only had 10 days to design and code a working prototype of a programming language that 
+could run on the browser.
 
-He needed to create a language that appealed to non-professional
-programmers who wanted to hack a website from scratch. The
-reason he was given only 10 days was that Netscape needed to
-release its browser, which at the time competed with Microsoft.
-In the beginning, JavaScript was not as powerful as it is today, but
-an active community of JavaScript developers kept adding new
-features to the language.
+He needed to create a language that appealed to non-professional programmers who wanted 
+to hack a website from scratch. The reason he was given only 10 days was that Netscape 
+needed to release its browser, which at the time competed with Microsoft. In the 
+beginning, JavaScript was not as powerful as it is today, but an active community of 
+JavaScript developers kept adding new features to the language.
 
-With the rise of internet-based companies like Google and
-Facebook, JavaScript began to grow to accommodate the ambitions
-of these giant internet companies. The language received
-contributions from software developers everywhere around the
-world.
+With the rise of internet-based companies like Google and Facebook, JavaScript began to 
+grow to accommodate the ambitions of these giant internet companies. The language received
+contributions from software developers everywhere around the world.
 
-A great innovation happened to make JavaScript even more
-powerful in 2009. A server-side environment named Node.js was
-released, allowing JavaScript to run on the server side like PHP,
-Java, Python, Ruby, and many more. It also enabled developers to
-create a full-stack web application using only JavaScript.
+A great innovation happened to make JavaScript even more powerful in 2009. A server-side 
+environment named Node.js was released, allowing JavaScript to run on the server side 
+like PHP, Java, Python, Ruby, and many more. It also enabled developers to create a 
+full-stack web application using only JavaScript.
 
 Today, JavaScript is a language that is used virtually everywhere.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Why Learn JavaScript?
+<h3>Why Learn JavaScript?</h3>
 
 There are 4 good reasons why you need to learn JavaScript:
 
-1. JavaScript is the only language that works in the browser
-2. It’s fairly easy to learn (but hard to master)
-3. It’s an essential language for making web applications
-4. There are many career opportunities when you know
-how to work with JavaScript
+	1. JavaScript is the only language that works in the browser
+	2. It’s fairly easy to learn (but hard to master)
+	3. It’s an essential language for making web applications
+	4. There are many career opportunities when you know how to work with JavaScript
 
-Learning JavaScript opens tremendous opportunities no matter
-what role you want to get into in the tech industry. You can be a
-frontend, backend, mobile, or full-stack developer by mastering
+Learning JavaScript opens tremendous opportunities no matter what role you want to get into in 
+the tech industry. You can be a frontend, backend, mobile, or full-stack developer by mastering
 JavaScript.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Computer Setup
+<h3>Computer Setup</h3>
 
 To start programming with JavaScript, you only need two things:
 
-1. A web browser
-2. A code editor
+	1. A web browser
+	2. A code editor
 
-We’re going to use the Chrome browser to run our JavaScript code,
-so if you don’t have one, you can download it here:
-https://www.google.com/chrome/
+We’re going to use the Chrome browser to run our JavaScript code, so if you don’t have one, 
+you can download it here: https://www.google.com/chrome/
 
-The browser is available for all major operating systems. Once the
-download is complete, install the browser on your computer.
+The browser is available for all major operating systems. Once the download is complete, 
+install the browser on your computer.
 
-Next, we need to install a code editor. There are several free code
-editors available on the Internet, such as Sublime Text, Visual
-Studio Code, and Notepad++.
+Next, we need to install a code editor. There are several free code editors available on 
+the Internet, such as Sublime Text, Visual Studio Code, and Notepad++.
 
-Out of these editors, my favorite is Visual Studio Code, because it’s
-fast and easy to use.
+Out of these editors, my favorite is Visual Studio Code, because it’s fast and easy to use.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Installing Visual Studio Code
+<h3>Installing Visual Studio Code</h3>
 
-Visual Studio Code or VSCode for short is a code editor application
-created for the purpose of writing code. Aside from being free,
-VSCode is fast and available on all major operating systems.
-You can download Visual Studio Code here:
-https://code.visualstudio.com/
-When you open the link above, there should be a button showing
-the version compatible with your operating system as shown
-below:
+Visual Studio Code or VSCode for short is a code editor application created for the purpose 
+of writing code. Aside from being free, VSCode is fast and available on all major operating 
+systems.
 
+You can download Visual Studio Code here: https://code.visualstudio.com/
+
+When you open the link above, there should be a button showing the version compatible with 
+your operating system as shown below:
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Figure 1. Install VSCode
 
-Click the button to download VSCode, and install it on your
-computer.
-Now that you have a code editor installed, the next step is to create
-your first JavaScript application.
+Click the button to download VSCode, and install it on your computer.
+
+Now that you have a code editor installed, the next step is to create your first JavaScript 
+application.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Your First JavaScript Application
-It’s time to run your first JavaScript program. First, create a folder
-on your computer that will be used to store all files related to this
-book. You can name the folder 'beginning_javascript'.
-Next, open the Visual Studio Code, and select File > Open Folder…​
-from the menu bar. Select the folder you’ve just created earlier.
-VSCode will load the folder and display the content in the Explorer
-sidebar, it should be empty as we haven’t created any files yet.
-To create a file, right-click anywhere inside the VSCode window
-and select New Text File or New File…​ from the menu. Once the file
-is created, press Ctrl+S or Command+S to save the file. Name that
-file as index.html.
-The next step is to put some content in the HTML file. You can write
-the content below:
+
+It’s time to run your first JavaScript program. First, create a folder on your computer that 
+will be used to store all files related to this book. You can name the folder 'beginning_javascript'.
+
+Next, open the Visual Studio Code, and select File &gt; Open Folder…​ from the menu bar. 
+Select the folder you’ve just created earlier.
+
+VSCode will load the folder and display the content in the Explorer sidebar, it should be 
+empty as we haven’t created any files yet.
+
+To create a file, right-click anywhere inside the VSCode window and select New Text 
+File or New File…​ from the menu. Once the file is created, press Ctrl+S or Command+S 
+to save the file. Name that file as index.html.
+
+<p>The next step is to put some content in the HTML file.<br>
+You can write the content below:</p>
 
 ```
 <!DOCTYPE html>
@@ -123,27 +116,24 @@ scale=1.0">
 </html>
 ```
 
-The HTML code above is just a standard template for a new HTML
-document, in which we set the document type with DOCTYPE and the
-language with lang.
+The HTML code above is just a standard template for a new HTML document, in which we set 
+the document type with DOCTYPE and the language with lang.
 
-Inside the <head> tag, we defined basic information about this
-document, such as the character encoding with charset, the
-viewport and default zoom level to 1.0, the title of the document,
-and the <script> tag to load a JavaScript file.
+Inside the &lt;head&gt; tag, we defined basic information about this document, such as the 
+character encoding with charset, the viewport and default zoom level to 1.0, the title of 
+the document, and the &lt;script&gt; tag to load a JavaScript file.
 
-Notice that the <script> tag above contains the defer attribute. This
-attribute is added to ensure that the script will be processed after
-the HTML document has been loaded by the browser.
-Inside the body tag, we just add a heading <h1> tag with the 'Hello
-World!' text.
+Notice that the &lt;script&gt; tag above contains the defer attribute. This attribute is 
+added to ensure that the script will be processed after the HTML document has been loaded 
+by the browser.
 
-In your VSCode, you should see different parts of your code
-highlighted with different colors. This is a feature of the text editor
-called syntax highlighting, and it’s really useful to help you
-distinguish different parts of the code.
-Save the changes to the file, and the next step is to run this file
-using a local server.
+Inside the body tag, we just add a heading &lt;h1&gt; tag with the 'Hello World!' text.
+
+In your VSCode, you should see different parts of your code highlighted with different 
+colors. This is a feature of the text editor called syntax highlighting, and it’s really 
+useful to help you distinguish different parts of the code.
+
+Save the changes to the file, and the next step is to run this file using a local server.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Install Live Server Extension
