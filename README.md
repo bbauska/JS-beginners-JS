@@ -1,7 +1,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of JS-Beginners-JS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Chapter 1: Introduction</h2>
+<h2 id="#ch1">Chapter 1: Introduction</h2>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What is JavaScript?</h3>
@@ -156,37 +156,37 @@ Figure 2. Install Live Server
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Explanation of the image above:
-1. Click the Extensions icon in the Activity Bar
-2. Search for 'live server' and select the one created by
-Ritwick Dey
-3. Install the extension
+	1. Click the Extensions icon in the Activity Bar
+	2. Search for 'live server' and select the one created by Ritwick Dey
+	3. Install the extension
 
-Once installed, go back to the Explorer tab by clicking on the Files
-icon at the top of the Activity Bar.
+Once installed, go back to the Explorer tab by clicking on the Files icon at the top of the 
+Activity Bar.
 
-Here, you need to right-click on the index.html file and select Open
-with Live Server from the context menu.
+Here, you need to right-click on the index.html file and select Open with Live Server from 
+the context menu.
 
-The Live Server should start a local server and open your browser
-automatically as follows:
+The Live Server should start a local server and open your browser automatically as follows:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Figure 3. Live Server Running
-If you see the image above, congratulations! You now have a local
-server to help you develop your JavaScript application.
+<h4>Figure 3. Live Server Running</h4>
+
+<p>If you see the image above, congratulations! You now have a local server to help you develop 
+your JavaScript application.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Creating the JavaScript File
+<h3>Creating the JavaScript File</h3>
 
-Now that we have a local server running, the last thing we need is
-to create a JavaScript file and print something to the console to
-know that it’s working correctly.
+Now that we have a local server running, the last thing we need is to create a JavaScript file 
+and print something to the console to know that it’s working correctly.
 
-In your VSCode window, right-click on the Explorer sidebar and
-write a new file named script.js.
+In your VSCode window, right-click on the Explorer sidebar and write a new file named script.js.
 
 Inside the file, write the following code:
+
+```
 console.log('Learning JavaScript!');
+```
 
 Live Server automatically reloads the browser when it detects any
 change in your files. Back to the browser, you need to open the
@@ -216,13 +216,11 @@ used to print things to the console. This keyword will be used
 frequently in the coming chapters.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Writing Comments
+<h3>Writing Comments</h3>
 
-In programming, comments are text we use to communicate the
-context of the code written in the file.
+In programming, comments are text we use to communicate the context of the code written in the file.
 
-To write a comment in JavaScript, you need to add two forward
-slashes // before the comment as shown below:
+To write a comment in JavaScript, you need to add two forward slashes // before the comment as shown below:
 
 ```
 // This is a comment
@@ -230,25 +228,29 @@ slashes // before the comment as shown below:
 // Below print two lines of statements
 console.log("Hello World!");
 console.log("I'm learning JavaScript");
-Comments are ignored by the language processor, so you can use
-comments to disable some code without having to delete that code.
+```
+
+Comments are ignored by the language processor, so you can use comments to disable some code 
+without having to delete that code.
+
 The code below shows how to disable the second print statement:
+
+```
 console.log("Hello World!");
 // console.log("I'm learning JavaScript");
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Summary
+<h3>Summary</h3>
 
-In this chapter, we’ve explored the origins of JavaScript, installed
-the required tools to code in JavaScript, and run our first JavaScript
-application.
+In this chapter, we’ve explored the origins of JavaScript, installed the required tools to code 
+in JavaScript, and run our first JavaScript application.
 
-We’ve also learned how to write comments in our JavaScript file. In
-the next chapter, we’re going to learn about variables.
+We’ve also learned how to write comments in our JavaScript file. In the next chapter, we’re going 
+to learn about variables.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Chapter 2: JavaScript Variables
+<h2 id="#ch2">Chapter 2: JavaScript Variables</h2>
 
 Before explaining what a variable is, I want you to change the code
 you’ve written in the script.js file.
@@ -465,20 +467,18 @@ console.log(`${name} is learning ${topic} today`);
 // Output: John is learning JavaScript today
 ```
 
-To use the template strings format, you need to use the backtick (`)
-character to wrap the string instead of quotations.
+To use the template strings format, you need to use the backtick (&grave;) character to wrap 
+the string instead of quotations.
 
-The variable is embedded in the string using the dollar symbol and
-curly brackets as in ${variable}.
+The variable is embedded in the string using the dollar symbol and curly brackets as in 
+<b>${variable}</b>.
 
-This way, JavaScript knows that you’re referencing a variable
-inside the string.
+This way, JavaScript knows that you’re referencing a variable inside the string.
 
-When you have multiple strings to print in a single line, then the
-template strings format is more convenient because you don’t have
-to break the string with quotations and concatenations.
-Next, strings can also represent numbers. You surround the
-numbers in quotations as follows:
+When you have multiple strings to print in a single line, then the template strings format is more 
+convenient because you don’t have to break the string with quotations and concatenations.
+
+Next, strings can also represent numbers. You surround the numbers in quotations as follows:
 
 ```
 let score = "10" + "30";
@@ -486,12 +486,11 @@ console.log(score);
 // Output: 1030
 ```
 
-When you join two string numbers with a + symbol, JavaScript will
-join the two numbers instead of performing arithmetic addition.
-This is how strings work in JavaScript. Let’s look at numbers next.
+When you join two string numbers with a + symbol, JavaScript will join the two numbers instead of 
+performing arithmetic addition. This is how strings work in JavaScript. Let’s look at numbers next.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Numbers (Integers and Floats) in JavaScript
+<h3>Numbers (Integers and Floats) in JavaScript</h3>
 
 Number data types represent different kinds of numbers. There
 are two types of numbers in JavaScript:
