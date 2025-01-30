@@ -1,10 +1,17 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of JS-Beginners-JS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Chapter 1: Introduction</h2>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 What is JavaScript?
+
 JavaScript was created around April 1995 by a developer named
 Brendan Eich. At the time, he was working to develop a browser
 for a company called Netscape. He was told that he only had 10
 days to design and code a working prototype of a programming
 language that could run on the browser.
+
 He needed to create a language that appealed to non-professional
 programmers who wanted to hack a website from scratch. The
 reason he was given only 10 days was that Netscape needed to
@@ -12,43 +19,62 @@ release its browser, which at the time competed with Microsoft.
 In the beginning, JavaScript was not as powerful as it is today, but
 an active community of JavaScript developers kept adding new
 features to the language.
+
 With the rise of internet-based companies like Google and
 Facebook, JavaScript began to grow to accommodate the ambitions
 of these giant internet companies. The language received
 contributions from software developers everywhere around the
 world.
+
 A great innovation happened to make JavaScript even more
 powerful in 2009. A server-side environment named Node.js was
 released, allowing JavaScript to run on the server side like PHP,
 Java, Python, Ruby, and many more. It also enabled developers to
 create a full-stack web application using only JavaScript.
+
 Today, JavaScript is a language that is used virtually everywhere.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Why Learn JavaScript?
+
 There are 4 good reasons why you need to learn JavaScript:
+
 1. JavaScript is the only language that works in the browser
 2. It’s fairly easy to learn (but hard to master)
 3. It’s an essential language for making web applications
 4. There are many career opportunities when you know
 how to work with JavaScript
+
 Learning JavaScript opens tremendous opportunities no matter
 what role you want to get into in the tech industry. You can be a
 frontend, backend, mobile, or full-stack developer by mastering
 JavaScript.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Computer Setup
+
 To start programming with JavaScript, you only need two things:
+
 1. A web browser
 2. A code editor
+
 We’re going to use the Chrome browser to run our JavaScript code,
 so if you don’t have one, you can download it here:
 https://www.google.com/chrome/
+
 The browser is available for all major operating systems. Once the
 download is complete, install the browser on your computer.
+
 Next, we need to install a code editor. There are several free code
 editors available on the Internet, such as Sublime Text, Visual
 Studio Code, and Notepad++.
+
 Out of these editors, my favorite is Visual Studio Code, because it’s
 fast and easy to use.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Installing Visual Studio Code
+
 Visual Studio Code or VSCode for short is a code editor application
 created for the purpose of writing code. Aside from being free,
 VSCode is fast and available on all major operating systems.
@@ -57,11 +83,15 @@ https://code.visualstudio.com/
 When you open the link above, there should be a button showing
 the version compatible with your operating system as shown
 below:
+
 Figure 1. Install VSCode
+
 Click the button to download VSCode, and install it on your
 computer.
 Now that you have a code editor installed, the next step is to create
 your first JavaScript application.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Your First JavaScript Application
 It’s time to run your first JavaScript program. First, create a folder
 on your computer that will be used to store all files related to this
@@ -76,6 +106,8 @@ is created, press Ctrl+S or Command+S to save the file. Name that
 file as index.html.
 The next step is to put some content in the HTML file. You can write
 the content below:
+
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,81 +121,120 @@ scale=1.0">
 <h1>Hello World!</h1>
 </body>
 </html>
+```
+
 The HTML code above is just a standard template for a new HTML
 document, in which we set the document type with DOCTYPE and the
 language with lang.
+
 Inside the <head> tag, we defined basic information about this
 document, such as the character encoding with charset, the
 viewport and default zoom level to 1.0, the title of the document,
 and the <script> tag to load a JavaScript file.
+
 Notice that the <script> tag above contains the defer attribute. This
 attribute is added to ensure that the script will be processed after
 the HTML document has been loaded by the browser.
 Inside the body tag, we just add a heading <h1> tag with the 'Hello
 World!' text.
+
 In your VSCode, you should see different parts of your code
 highlighted with different colors. This is a feature of the text editor
 called syntax highlighting, and it’s really useful to help you
 distinguish different parts of the code.
 Save the changes to the file, and the next step is to run this file
 using a local server.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Install Live Server Extension
+
 VSCode extensions are small programs created to enhance the
 capability of VSCode. One extension that’s very useful is the Live
 Server extension, which allows developers to run a local server to
 test their code.
+
 We’re going to use the Live Server extension to run our HTML file.
 To install extensions, click the Extension icons that look like a
 puzzle of blocks or press Ctrl+Shift+X or Command+Shift+X.
+
 You should see the extension sidebar. At the top of the sidebar, type
 in 'live server' and select the one that’s created by Ritwick Dey. See
 the picture below:
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Figure 2. Install Live Server
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Explanation of the image above:
 1. Click the Extensions icon in the Activity Bar
 2. Search for 'live server' and select the one created by
 Ritwick Dey
 3. Install the extension
+
 Once installed, go back to the Explorer tab by clicking on the Files
 icon at the top of the Activity Bar.
+
 Here, you need to right-click on the index.html file and select Open
 with Live Server from the context menu.
+
 The Live Server should start a local server and open your browser
 automatically as follows:
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Figure 3. Live Server Running
 If you see the image above, congratulations! You now have a local
 server to help you develop your JavaScript application.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Creating the JavaScript File
+
 Now that we have a local server running, the last thing we need is
 to create a JavaScript file and print something to the console to
 know that it’s working correctly.
+
 In your VSCode window, right-click on the Explorer sidebar and
 write a new file named script.js.
+
 Inside the file, write the following code:
 console.log('Learning JavaScript!');
+
 Live Server automatically reloads the browser when it detects any
 change in your files. Back to the browser, you need to open the
 browser console by pressing the Command+Option+J or Control
 +Shift+J
+
 You should see the words printed in the console as follows:
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Figure 4. Open Browser Console
+
 With this, you’ve completed your first JavaScript application. Well
 done!
+
 The console.log() is a keyword used to print output to the console.
+
 It consists of the console keyword, which is an object that gives
 access to the browser console.
+
 The log keyword is a method used to instruct JavaScript to print a
 message. By now, you must be wondering what is an object and a
 method.
+
 Don’t worry! We’re going to learn more about functions and objects
 later. For now, just remember that the console.log() keyword is
 used to print things to the console. This keyword will be used
 frequently in the coming chapters.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Writing Comments
+
 In programming, comments are text we use to communicate the
 context of the code written in the file.
+
 To write a comment in JavaScript, you need to add two forward
 slashes // before the comment as shown below:
+
+```
 // This is a comment
 // This is also a comment
 // Below print two lines of statements
@@ -174,23 +245,38 @@ comments to disable some code without having to delete that code.
 The code below shows how to disable the second print statement:
 console.log("Hello World!");
 // console.log("I'm learning JavaScript");
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Summary
+
 In this chapter, we’ve explored the origins of JavaScript, installed
 the required tools to code in JavaScript, and run our first JavaScript
 application.
+
 We’ve also learned how to write comments in our JavaScript file. In
 the next chapter, we’re going to learn about variables.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Chapter 2: JavaScript Variables
+
 Before explaining what a variable is, I want you to change the code
 you’ve written in the script.js file.
+
 Change the code in that file as follows:
+
+```
 let message = "Learning JavaScript!"
 console.log(message)
+```
+
 Go back to the browser console, and you’ll see the same output as
 when you write the 'Learning JavaScript!' message directly inside
 the console.log() function. How can this be?
+
 This is because the message declared in the code above is a
 variable.
+
 In programming, a variable is simply a name that you give to a
 value so that you can access that value later. You can think of a
 variable as a label that can be tagged to a certain value, so you can
@@ -204,12 +290,18 @@ In the second line, JavaScript is instructed to print the value of
 message, and that’s exactly what it does.
 You can change the value of your variable by re-assigning another
 value as follows:
+
+```
 let message = "Learning JavaScript!"
 print(message)
 message = "Nice weather!"
 print(message)
+```
+
 Run the file and you’ll see two lines printed as the output:
+
 Learning JavaScript!
+
 Nice weather!
 Variables are used to reference data so that you can use the same
 data multiple times in your program.
@@ -250,38 +342,63 @@ A constant variable is a variable that doesn’t change its value as
 long as the program is running. In JavaScript, a constant variable is
 declared using the const keyword.
 The following shows how to declare 2 constants in JavaScript:
+
+```
 const FILE_SIZE_LIMIT = 2000
 const MAX_SPEED = 300
+```
+
 If you try to reassign a constant variable, you’ll get an error:
+
+```
 const FILE_SIZE_LIMIT = 2000
 FILE_SIZE_LIMIT = 3000 // Error!
+```
+
 The naming convention for a constant is to use all uppercase
 letters, although using lowercase letters also works. The all-
 uppercase standard makes constants stand out more when you
 read the code.
+
 Summary
+
 In this chapter, we’ve explored how we can create variables in
 JavaScript using the let and const keywords. We’ve also learned
 how to access a variable by passing the variable name.
+
 Learning how to use variables to make a program that does what
 you want it to do is one of the most important skills you can have
 as a programmer.
+
 But before you learn more about how to make use of variables, let’s
 learn about data types in JavaScript.
 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Chapter 3: Basic Data Types</h2>
+
 Data types are simply definitions for different types of data known
 to a programming language.
+
 A data type contains specifications about what you can and can’t
 do with that data.
+
 To show you a brain-friendly example, I’m sure you agree that 2 +
 2 = 4?
+
 Well, JavaScript also agrees with that:
+
+```
 console.log(2 + 2);
 // Output: 4
+```
+
 But what if you try to add a number to letters as shown below?
+
+```
 console.log(2 + "ABC");
+```
+
 Output:
 2ABC
 Adding a number to letters will cause JavaScript to concatenate or
@@ -290,15 +407,20 @@ as adding a number to another number, and JavaScript looks at the
 data type to know which operation to perform on the data.
 In this section, you’re going to learn basic data types that JavaScript
 has:
-​▪​Strings
-​▪​Numbers
-​▪​Booleans
-​▪​Null
-​▪​Undefined
+​	▪​Strings
+	​▪​Numbers
+	​▪​Booleans
+	​▪​Null
+	​▪​Undefined
+
 You will also see how these different types react to operators like
 the + operator shown above.
+
 First, let’s start with strings.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Strings in JavaScript
+
 Strings are simply data defined as a series of characters.
 You’ve seen an example of string data previously when you call the
 console.log() function to print a message:
@@ -308,71 +430,113 @@ A string needs to be enclosed in quotations. You can use double
 quotes or single quotes, but they have to match.
 You’ll get an error when you use different quotation marks like
 this:
+
+```
 // Invalid or unexpected token
 let message = "Hello';
+```
+
 You can join two or more strings as one with the plus + symbol.
 Don’t forget to add a space before the next string or you’ll get a
 string without spaces!
+
+```
 let message = "Hello " + "and " + "Goodbye!";
 console.log(message);
 // Output: Hello and Goodbye!
+```
+
 When printing a variable’s value, you can also add strings in the
 console.log() function directly as follows:
+
+```
 let message = "Hello, Dave!";
 console.log("The message is: " + message);
 // Output: The message is: Hello, Dave!
+```
+
 This is particularly useful when you have multiple strings to
 console.log in one sentence as follows:
+
+```
 let name = "John";
 let topic = "JavaScript";
 console.log(name + " is learning " + topic + " today");
 // Output: John is learning JavaScript today
+```
+
 Or you can also use the template strings format, which allows you
 to embed a variable directly inside the string as follows:
+
+```
 let name = "John";
 let topic = "JavaScript";
 console.log(`${name} is learning ${topic} today`);
 // Output: John is learning JavaScript today
+```
+
 To use the template strings format, you need to use the backtick (`)
 character to wrap the string instead of quotations.
+
 The variable is embedded in the string using the dollar symbol and
 curly brackets as in ${variable}.
+
 This way, JavaScript knows that you’re referencing a variable
 inside the string.
+
 When you have multiple strings to print in a single line, then the
 template strings format is more convenient because you don’t have
 to break the string with quotations and concatenations.
 Next, strings can also represent numbers. You surround the
 numbers in quotations as follows:
+
+```
 let score = "10" + "30";
 console.log(score);
 // Output: 1030
+```
+
 When you join two string numbers with a + symbol, JavaScript will
 join the two numbers instead of performing arithmetic addition.
 This is how strings work in JavaScript. Let’s look at numbers next.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Numbers (Integers and Floats) in JavaScript
+
 Number data types represent different kinds of numbers. There
 are two types of numbers in JavaScript:
-​▪​Integers
-​▪​Floats
+	​▪​Integers
+	​▪​Floats
+	
 An integer is a whole number without decimals and fractions.
 Below, you see examples of two integers x and y:
+
+```
 let x = 1;
 let y = 2;
 console.log(x + y);
 // Output: 3
-On the other hand, floats refer to numbers with decimal points like
-this:
+```
+
+On the other hand, floats refer to numbers with decimal points like this:
+
+```
 let f = 1.2;
 let z = 2.35;
 console.log(f + z);
 // Output: 3.55
+```
+
 To create a float, you need to write a number and use . to define
 the decimal values.
+
 With number types, you can perform arithmetic operations such as
 addition +, subtraction -, division /, and multiplication * just like
 how you use a calculator.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Booleans in JavaScript
+
 Boolean is a type that represents true and false values.
 You can think of Booleans as a light switch that can only be in one
 of two positions: on or off.
@@ -380,71 +544,108 @@ So it is with Boolean values in programming languages. They are
 used when JavaScript needs to make a decision: Go left or go right?
 Right or wrong?
 Here’s how you create Boolean values in JavaScript:
+
+```
 let on = true;
 let off = false;
+```
+
 This data type is frequently used when you need to make a decision
 using a control flow. You’ll see why Boolean values are very useful
 when developing an application later.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Undefined
+
 Undefined is a data type in JavaScript used to represent a variable
 that hasn’t been assigned any value yet.
+
 Anytime you declare a variable without assigning any value, the
 undefined value will be assigned to that variable. For example:
+
+```
 let first_name;
 console.log(first_name); // undefined
+```
+
 You can also assign undefined to a variable explicitly as follows:
 let last_name = undefined;
 But this is usually not recommended, because JavaScript has
 another value called null which is used to mark a variable as
 empty.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Null
+
 The null value is a special data type that represents an empty or
 unknown value. Here’s how you assign a variable as null:
+
+```
 let first_name = null;
+```
+
 The code above means that the value of first_name is empty or
 unknown.
+
 At this point, you may be thinking what’s the difference between
 undefined and null? They seem to serve a similar purpose.
 And you are correct. Both undefined and null are values that
 represent nothing, and other programming languages usually only
 have one, and that is null.
+
 In JavaScript, the undefined value is reserved as the default value
 when a variable is declared, while null means you intentionally
 assign an "empty" value for the variable.
+
 To summarize, JavaScript treats undefined as the "default" empty
 value and null as the "intentional" empty value.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Type Conversion
+
 At times, you might want to convert one data type into another so
 that the program runs as expected.
 For example, suppose you need to convert a string into an integer
 so you can perform an addition between numbers.
 If you have one of the numbers as a string, JavaScript joins them
 together instead of adding:
+
+```
 let x = "7";
 let y = 5;
 console.log(x + y); // 75
+```
+
 To add the two numbers properly, you need to convert the x
 variable into an integer.
+
 Changing the data from one type to another is also known as type
 conversion or type casting. There are 3 functions frequently used
 to do type conversion:
-​▪​Number()
-​▪​String()
-​▪​Boolean()
+​	▪​Number()
+	​▪​String()
+	​▪​Boolean()
+	
 As their name implies, these type conversion functions will attempt
 to convert any value you specified inside the parentheses to the
 type of the same name.
 To convert a string into an integer, you can use the int() function:
+
+```
 let x = "7";
 let y = 5;
 // Convert x to integer
 x = Number(x);
 console.log(x + y); // 12
+```
+
 On the other hand, the String() function converts a value of
 another type to a string. If you type String(true), then you’ll get
 'true' back.
 Passing a value of the same type as the function has no effect. It
 will just return the same value back.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Type Coercion
 In JavaScript, type coercion is a process where a value of one type
 is implicitly converted into another type.
@@ -453,97 +654,149 @@ cause an error. But as you’ll see in this section, type coercion can
 actually cause undesired behavior in the program.
 Let’s consider what happens when you perform an addition
 between a number and a string in JavaScript:
+
+```
 console.log(1 + "1");
+```
+
 As you’ve seen in the previous section, JavaScript will consider the
 number as a string and join the two letters as 11 instead of adding
 them (1 + 1 = 2)
+
 But you need to know that other programming languages don’t
 respond the same way.
+
 Programming languages like Ruby or Python will respond by
 stopping your program and giving an error as feedback. It will
 respond with something along the lines of "Cannot perform
 addition between a number and a string".
+
 But JavaScript will see this and say: "I cannot do the operation you
 requested as it is, but I can do it if the number 1 is converted to a
 string, so I’ll do just that."
+
 And that’s exactly what type coercion is. JavaScript notices that it
 doesn’t know how to execute your code, but it doesn’t stop the
 program and responds with an error.
 Instead, it will change the data type of one of the values without
 telling you.
+
 While type coercion doesn’t cause any errors, the output is
 something you actually don’t want either.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Type Coercion Rules
+
 Type coercion rules are never stated clearly anywhere, but I did
 find some rules by trying various silly codes myself.
 It seems that JavaScript will first convert data types to string when
 it finds different data types:
+
+```
 1 + "1" // "11"
 [1 ,2] + "1" // "1,21"
 true + "1" // "true1"
+```
+
 But the order of the values matters when you have an object.
 Writing objects first always returns numeric 1:
+
+```
 { a: 1 } + "1" // 1
 "1" + { a: 1 } // "1[object Object]"
 true + { a: 1 } // "true[object Object]"
 { a: 1 } + 1 // 1
+```
+
 JavaScript can calculate between boolean and numeric types,
 because boolean values true and false implicitly have the numeric
 value of 1 and 0:
+
+```
 true + 1 // 1+1 = 1
 false + 1 // 0+1 = 1
 [1,2] + 1 // "1,21"
+```
+
 Type coercion is always performed implicitly. When you assign
 the value as a variable, the variable type will never change outside
 of the operation:
+
+```
 let myNumber = 1;
 console.log(myNumber + "1"); // prints 11
 console.log(myNumber); // still prints number 1 and not string
+```
+
 You can try to find some more on your own, but you hopefully
 understand what type coercion is and how it works by now.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Why You Should Avoid Type Coercion
 JavaScript developers are generally divided into two camps when
 talking about type coercion:
-​▪​Those who think it’s a feature
-​▪​Those who think it’s a bug
+​	▪​Those who think it’s a feature
+	​▪​Those who think it’s a bug
+	
 If you ask me, I would recommend that you avoid using type
 coercion in your code all the time.
+
 The reason is that I’ve never found a problem where type coercion
 is required for the solution, and when I need to convert one type
 into another, it’s always better to do so explicitly:
+
+```
 let price = "50";
 let tax = 5;
 let totalPrice = Number(price) + Number(tax);
 console.log(totalPrice);
+```
+
 Using explicit type conversion functions such as Number() and
 String() will make your code clear and transparent. You don’t need
 to guess the correct data type required in your program.
+
 Type coercion is one of the unique features in JavaScript that may
 confuse beginners, so it’s good to clear it up early.
 Summary
+
 JavaScript provides five basic data types that you can use in
 creating a useful program. Each data type has specific traits that
 define what you can and can’t do with the data.
+
 In the next chapter, you’re going to learn about operators, which
 allows you to further manipulate any data defined in your code.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Chapter 4: JavaScript Operators</h2>
+
 As the name implies, operators are symbols you can use to perform
 operations on your data.
+
 You’ve seen some examples of using the plus + operator to join
 multiple strings and add two numbers together. Of course,
+
 JavaScript has more than one operator as you’ll discover in this
 section.
+
 Since you’ve learned about data types and conversion previously,
 learning operators should be relatively easy.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Arithmetic Operators
 The arithmetic operators are used to perform mathematical
 operations like additions and subtractions.
 These operators are frequently used with number data types.
 Here’s an example:
+
+```
 console.log(10 - 3); // 7
 console.log(2 + 4); // 6
+```
+
 In total, there are 8 arithmetic operators in JavaScript:
+
+```
 // 1. Addition (+)
 // Returns the sum between the two operands
 console.log(5 + 2); // 7
@@ -554,100 +807,156 @@ console.log(5 - 2); // 3
 // Returns the multiplication between the two operands
 console.log(5 * 2); // 8
 // 4. Exponentiation (**) operator
-// Returns the value of the left operand raised to the power of the right
-operand
+// Returns the value of the left operand raised to the power of the right operand
 console.log(5 ** 2); // 4
 // 5. Division operator
 // Returns the sum between the two operands
 console.log(5 / 2); // 4
 // 6. Remainder operator
-// Returns the remainder of the left operand after being divided by the
-right operand
+// Returns the remainder of the left operand after being divided by the right operand
 console.log(5 % 2); // 1
+```
+
 These operators are pretty straightforward. As you’ve seen in the
 previous section, the + operator can also be used on strings data to
 merge multiple strings as one:
+
+```
 let message = "Hello " + "human!";
 console.log(message); // Hello human!
+```
+
 When you add a number and a string, JavaScript will perform a
 type coercion and treat the number value as a string value:
+
+```
 let sum = "Hi " + 89;
 console.log(sum); // Hi 89
+```
+
 Using any other arithmetic operator with strings will cause
 JavaScript to return a NaN value, which stands for Not a Number.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The NaN is a number data type.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The Assignment Operator
 The next operator to learn is the assignment operator and its
 variants, which is represented by the equals = sign.
+
 In JavaScript, the assignment operator is used to assign data or a
 value to a variable.
+
 You’ve seen some examples of using the assignment operator
 before, so here’s a reminder:
+
+```
 // Assign the string value 'Hello' to the 'message' variable
 let message = "Hello";
 // Assign the Boolean value true to the 'on' variable
 let on = true;
+```
+
 You may’ve noticed that the equals sign has a slightly different
 meaning in programming than in math, and you’re correct!
 The assignment operator isn’t used to compare if a number equals
 another number in programming.
+
 If you want to do that kind of comparison, then you need to use the
 equal to == operator. We’ll learn more about comparison in the
 next section.
+
 Assignment operators can also be combined with arithmetic
 operators, so that you can add or subtract values from the left
 operand.
 There are 6 types of assignment operators available in JavaScript.
 Among these, only the standard assignment and the addition
 assignment are used frequently. The rest is nice to know.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Standard Assignment Operator
 The assignment operator is used to assign one value to another:
+
+```
 let x = 2
 let y = 1
 // Assign y to x
 x = y
 console.log(x); // 1
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Addition Assignment Operator
 The addition assignment is used to perform addition on the two
 operands, and assign the result to the left operand:
+
+```
 let x = 2
 let y = 1
 x += y
 console.log(x); // 3
+```
+
 This is a shorter way to write x = x + y.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Subtraction Assignment Operator
 The subtraction assignment is used to perform subtraction on the
 two operands, and assign the result to the left operand:
+
+```
 let x = 2
 let y = 1
 x -= y
 console.log(x); // 1
+```
+
 This is a shorter way to write x = x - y.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Multiplication Assignment Operator
 The multiplication assignment is used to perform multiplication on
 the two operands, then assign the result to the left operand:
+
+```
 let x = 2
 let y = 2
 x *= y
 console.log(x); // 4
+```
+
 This is a shorter way to write x = x * y.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Division Assignment Operator
 The division assignment is used to perform division on the two
 operands, then assign the result to the left operand:
+
+```
 let x = 5
 let y = 2
 x /= y
 console.log(x); // 2.5
+```
+
 This is a shorter way to write x = x / y.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Remainder Assignment Operator
 The remainder assignment is used to perform remainder on the
 two operands, then assign the result to the left operand:
+
+```
 let x = 10
 let y = 3
 x %= y
 console.log(x); // 1
+```
+
 This is a shorter way to write x = x % y.
+
 Next, we’re going to take a look at the comparison operators.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The Comparison Operators
 Comparison operators are used to compare two values. The
 operators in this category will return Boolean values: either true or
@@ -3312,27 +3621,33 @@ When we got a response back, we just call the alert() function to
 notify the user, then refresh the tasks list with getTasks().
 Now You can test the delete button from the browser. It should be
 working.
+
 Editing a Task
+
 To edit a task, we need to declare the editTask() function in our
 script.js file as follows:
+
+```
 function editTask(id) {
-const newTitle = prompt('Enter the new task title');
-if (newTitle) {
-const data = { title: newTitle };
-fetch(BASE_API_URL + '/' + id, {
-method: 'PATCH',
-headers: {
-'Content-Type': 'application/json',
-},
- body: JSON.stringify(data),
-}).then(response => {
-if (response.ok) {
-alert('Task updated');
-getTasks();
+  const newTitle = prompt('Enter the new task title');
+  if (newTitle) {
+    const data = { title: newTitle };
+    fetch(BASE_API_URL + '/' + id, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    }).then(response => {
+      if (response.ok) {
+        alert('Task updated');
+        getTasks();
+      }
+    });
+  }
 }
-});
-}
-}
+```
+
 To edit a task, we need to call the prompt() function to ask the user
 a new title for the task. When the new title is received, we put the
 title as an object inside the data variable.
@@ -3340,14 +3655,22 @@ The next step is to perform a network request using fetch(), add
 the id of the task to the URL, and set the method to PATCH.
 When we receive a response, we notify the user and refresh the
 list.
+
 Marking a Task as Completed
+
 To mark a task as completed or not completed, we need to check if
 the checkbox input has the checked attribute.
 To do so, we need to access the event property when the input is
 clicked. This is why we pass the event property on the checkbox
 onclick attribute:
+
+```
 <input ... type="checkbox" onclick="toggleTask(event, id)">
+```
+
 Create a toggleTask() function in the script.js file as shown below:
+
+```
 function toggleTask(event, id) {
 const checked = event.target.checked;
 const data = {
@@ -3366,6 +3689,8 @@ alert('Hurray! You finished the task');
 getTasks();
 });
 }
+```
+
 The checked attribute returns true when the checkbox is checked,
 or false otherwise.
 We wrap this value in a data object and then send a PATCH request
@@ -3374,7 +3699,9 @@ When the task is marked as completed, we notify the user with an
 alert() call. To refresh the list, we call the getTasks() function.
 Now we have all core functionalities created using JavaScript. The
 last step is to enable the filter function.
+
 Filtering Tasks
+
 The select input that we’ve created will serve as a filter function.
 We can refresh the list to see only completed or active tasks.
 In JSON server, you can filter the returned data by adding a query
@@ -3384,15 +3711,20 @@ tasks?completed=false.
 You can test this by opening the URL on the browser.
 Since we already have a getTasks() function, we can create a
 filterTasks() function that simply calls on getTasks():
+
+```
 function filterTasks(event) {
-const filterValue = event.target.value;
-if (filterValue === 'all') {
-getTasks();
-} else if (filterValue === 'completed') {
-getTasks('completed');
-} else {
-getTasks('active');
-} }
+  const filterValue = event.target.value;
+  if (filterValue === 'all') {
+    getTasks();
+  } else if (filterValue === 'completed') {
+    getTasks('completed');
+  } else {
+    getTasks('active');
+  }
+}
+```
+
 Here, we use the event property again to get the value of the select
 input.
 Next, we check the value of the filterValue and add the relevant
@@ -3402,17 +3734,21 @@ If we want to see only completed tasks, then we send the
 To accommodate the filter argument, we need to add a parameter
 to the getTasks() function. Let’s update the function as shown
 below:
+
+```
 function getTasks(filter) {
-let parameter = '';
-if (filter === 'completed') {
-parameter = '?completed=true';
-} else if (filter === 'active') {
-parameter = '?completed=false';
+  let parameter = '';
+  if (filter === 'completed') {
+    parameter = '?completed=true';
+  } else if (filter === 'active') {
+    parameter = '?completed=false';
+  }
+  const API_URL = BASE_API_URL + parameter;
+  fetch(API_URL)
+  ...
 }
-const API_URL = BASE_API_URL + parameter;
-fetch(API_URL)
-...
-}
+```
+
 Here, we add the filter parameter to the getTasks() function.
 Then, we create a query parameter for the URL using an if-else
 check.
@@ -3425,11 +3761,8 @@ functionalities on your browser.
 If you encounter an error and need some help, you can compare
 your code with mine at https://github.com/nathansebhastian/js-
 todo-list/tree/main/check-point-2
-or
-email
-me
-at
-nathan@codewithnathan.com
+or email me at nathan@codewithnathan.com
+
 Summary
 Well done! You’ve just finished your second JavaScript project.
 Hopefully, this project has shown you how JavaScript is the secret
