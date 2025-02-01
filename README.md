@@ -29,7 +29,7 @@ full-stack web application using only JavaScript.
 Today, JavaScript is a language that is used virtually everywhere.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Why Learn JavaScript?</h3>
+<h4>Why Learn JavaScript?</h4>
 
 There are 4 good reasons why you need to learn JavaScript:
 
@@ -43,7 +43,7 @@ the tech industry. You can be a frontend, backend, mobile, or full-stack develop
 JavaScript.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Computer Setup</h3>
+<h4>Computer Setup</h4>
 
 To start programming with JavaScript, you only need two things:
 
@@ -62,7 +62,7 @@ the Internet, such as Sublime Text, Visual Studio Code, and Notepad++.
 Out of these editors, my favorite is Visual Studio Code, because it’s fast and easy to use.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Installing Visual Studio Code</h3>
+<h4>Installing Visual Studio Code</h4>
 
 Visual Studio Code or VSCode for short is a code editor application created for the purpose 
 of writing code. Aside from being free, VSCode is fast and available on all major operating 
@@ -74,7 +74,7 @@ When you open the link above, there should be a button showing the version compa
 your operating system as shown below:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Figure 1. Install VSCode
+<h4>Figure 1. Install VSCode</h4>
 
 Click the button to download VSCode, and install it on your computer.
 
@@ -82,7 +82,7 @@ Now that you have a code editor installed, the next step is to create your first
 application.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Your First JavaScript Application
+<h4>Your First JavaScript Application</h4>
 
 It’s time to run your first JavaScript program. First, create a folder on your computer that 
 will be used to store all files related to this book. You can name the folder 'beginning_javascript'.
@@ -104,14 +104,14 @@ You can write the content below:</p>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-
-scale=1.0">
-<title>Document</title>
-<script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-
+    scale=1.0">
+  <title>Document</title>
+  <script src="script.js" defer></script>
 </head>
 <body>
-<h1>Hello World!</h1>
+  <h1>Hello World!</h1>
 </body>
 </html>
 ```
@@ -136,7 +136,7 @@ useful to help you distinguish different parts of the code.
 Save the changes to the file, and the next step is to run this file using a local server.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Install Live Server Extension
+<h4>Install Live Server Extension</h4>
 
 VSCode extensions are small programs created to enhance the
 capability of VSCode. One extension that’s very useful is the Live
@@ -152,8 +152,7 @@ in 'live server' and select the one that’s created by Ritwick Dey. See
 the picture below:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Figure 2. Install Live Server
-
+<h4>Figure 2. Install Live Server</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Explanation of the image above:
 	1. Click the Extensions icon in the Activity Bar
