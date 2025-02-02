@@ -1,86 +1,112 @@
+---
+title: "JS-Beginners-JS: JavaScript for Beginners - JS"
+author: "bbauska"
+date created: "2/02/2025 Sun 3+pm"
+date last editted: "2/02/2025 Sun 3+pm"
+
+output: 
+  markdown:
+    with some style
+---
+
+<h2 align="center">JS for Beginners (JS)</h2>
+<br/>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of JS-Beginners-JS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w3cx logo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="./images/JS-Beginners-logo.jpg"
+  style="width:35%"
+  align="center"
+  title="JavaScript for Beginners logo"
+  alt="JavaScript for Beginners logo." />
+</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md of JS-Beginners-JS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="#ch1">Chapter 1: Introduction</h2>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What is JavaScript?</h3>
 
-JavaScript was created around April 1995 by a developer named Brendan Eich. At the time, 
+<p>JavaScript was created around April 1995 by a developer named Brendan Eich. At the time, 
 he was working to develop a browser for a company called Netscape. He was told that he 
 only had 10 days to design and code a working prototype of a programming language that 
-could run on the browser.
-
-He needed to create a language that appealed to non-professional programmers who wanted 
+could run on the browser.</p>
+<p>He needed to create a language that appealed to non-professional programmers who wanted 
 to hack a website from scratch. The reason he was given only 10 days was that Netscape 
 needed to release its browser, which at the time competed with Microsoft. In the 
 beginning, JavaScript was not as powerful as it is today, but an active community of 
-JavaScript developers kept adding new features to the language.
-
-With the rise of internet-based companies like Google and Facebook, JavaScript began to 
+JavaScript developers kept adding new features to the language.</p>
+<p>With the rise of internet-based companies like Google and Facebook, JavaScript began to 
 grow to accommodate the ambitions of these giant internet companies. The language received
-contributions from software developers everywhere around the world.
-
-A great innovation happened to make JavaScript even more powerful in 2009. A server-side 
+contributions from software developers everywhere around the world.</p>
+<p>A great innovation happened to make JavaScript even more powerful in 2009. A server-side 
 environment named Node.js was released, allowing JavaScript to run on the server side 
 like PHP, Java, Python, Ruby, and many more. It also enabled developers to create a 
-full-stack web application using only JavaScript.
+full-stack web application using only JavaScript.</p>
 
-Today, JavaScript is a language that is used virtually everywhere.
-
+<p>Today, JavaScript is a language that is used virtually everywhere.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Why Learn JavaScript?</h4>
+<h3>Why Learn JavaScript?</h3>
 
-There are 4 good reasons why you need to learn JavaScript:
+<p>There are 4 good reasons why you need to learn JavaScript:</p>
 
-	1. JavaScript is the only language that works in the browser
-	2. It’s fairly easy to learn (but hard to master)
-	3. It’s an essential language for making web applications
-	4. There are many career opportunities when you know how to work with JavaScript
+<ol type="1">
+  <li>JavaScript is the only language that works in the browser,</li>
+  <li>It’s fairly easy to learn (but hard to master),</li>
+  <li>It’s an essential language for making web applications, and</li>
+  <li>There are many career opportunities when you know how to work with JavaScript.</li>
+</ol>
 
-Learning JavaScript opens tremendous opportunities no matter what role you want to get into in 
+<p>Learning JavaScript opens tremendous opportunities no matter what role you want to get into in 
 the tech industry. You can be a frontend, backend, mobile, or full-stack developer by mastering
-JavaScript.
-
+JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Computer Setup</h4>
+<h3>Computer Setup</h3>
 
-To start programming with JavaScript, you only need two things:
+<p>To start programming with JavaScript, you only need two things:</p>
+<ol type="1">
+  <li>A web browser, and</li>
+  <li>A code editor</li>
+</ol>
 
-	1. A web browser
-	2. A code editor
+<p>We’re going to use the Chrome browser to run our JavaScript code, so if you don’t have one, 
+you can download it here: https://www.google.com/chrome/</p>
 
-We’re going to use the Chrome browser to run our JavaScript code, so if you don’t have one, 
-you can download it here: https://www.google.com/chrome/
+<p>The browser is available for all major operating systems. Once the download is complete, 
+install the browser on your computer.</p>
 
-The browser is available for all major operating systems. Once the download is complete, 
-install the browser on your computer.
+<p>Next, we need to install a code editor. There are several free code editors available on 
+the Internet, such as Sublime Text, Visual Studio Code, and Notepad++.</p>
 
-Next, we need to install a code editor. There are several free code editors available on 
-the Internet, such as Sublime Text, Visual Studio Code, and Notepad++.
-
-Out of these editors, my favorite is Visual Studio Code, because it’s fast and easy to use.
-
+<p>Out of these editors, my favorite is Visual Studio Code, because it’s fast and easy to use.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Installing Visual Studio Code</h4>
+<h3>Installing Visual Studio Code</h3>
 
-Visual Studio Code or VSCode for short is a code editor application created for the purpose 
+<p>Visual Studio Code or VSCode for short is a code editor application created for the purpose 
 of writing code. Aside from being free, VSCode is fast and available on all major operating 
-systems.
+systems.</p>
 
-You can download Visual Studio Code here: https://code.visualstudio.com/
+<p>You can download Visual Studio Code here: https://code.visualstudio.com/</p>
 
-When you open the link above, there should be a button showing the version compatible with 
-your operating system as shown below:
+<p>When you open the link above, there should be a button showing the version compatible with 
+your operating system as shown below:</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="./images/image001.jpg"
+  style="width:35%"
+  align="center"
+  title="Install VS Code"
+  alt="Install VS Code." />
 <h4>Figure 1. Install VSCode</h4>
+</p>
 
-Click the button to download VSCode, and install it on your computer.
+<p>Click the button to download VSCode, and install it on your computer.</p>
 
-Now that you have a code editor installed, the next step is to create your first JavaScript 
-application.
-
+<p>Now that you have a code editor installed, the next step is to create your first JavaScript 
+application.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Your First JavaScript Application</h4>
 
